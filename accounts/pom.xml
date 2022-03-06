@@ -56,6 +56,14 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<!-- This configuration is used to create an automatic configuration docker file-->
+				<configuration>
+					<image>
+						<name>
+							dikshant/${project.artifactId}
+						</name>
+					</image>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
