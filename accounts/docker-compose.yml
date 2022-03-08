@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+
+  accounts:
+    image: dikshant/accounts
+    mem_limit: 700m
+    ports:
+       - "8080:8080"
+    networks: 
+       - dikshant-network
+#This network is used by different docker instances to communicate among themselves. 
+networks:
+  dikshant-network:
